@@ -38,7 +38,7 @@ export type Config<TAbis extends Record<string, Abi>, TContext = unknown> = {
     rpcClient: RpcClient;
     pollingIntervalMs?: number;
     maxBlockRange?: bigint;
-    lagBlocks?: number; // New field for lag indexing strategy
+    lagBlocks?: bigint; // New field for lag indexing strategy
   };
   context?: TContext;
   logLevel?: keyof typeof LogLevel;

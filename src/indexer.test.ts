@@ -462,6 +462,8 @@ describe("counter contract", () => {
     });
   });
 
+  
+
   test("resumable index with the same indexer instance", async () => {
     const indexer = createIndexer({
       chain: {
